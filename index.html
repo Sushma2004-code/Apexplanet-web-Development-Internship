@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Webpage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SafeHer - Women Safety App</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This is my internship task project.</p>
-    </header>
+    <nav>
+        <h2>SafeHer</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="tips.html">Safety Tips</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <img src="https://via.placeholder.com/300" alt="Sample Image">
-        <p>Click the button below to see some magic!</p>
-        <button onclick="showMessage()">Click Me</button>
+    <section class="hero">
+        <h1>Your Safety. Your Strength.</h1>
+        <p>A web platform designed to provide safety resources and emergency contacts.</p>
+        <a href="emergency.html" class="btn">Add Emergency Contact</a>
     </section>
 
-    <footer>
-        <a href="https://www.google.com" target="_blank">Visit Google</a>
-    </footer>
+    <section class="features">
+        <div class="card">
+            <h3>Emergency Contacts</h3>
+            <p>Save important contacts securely.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card">
+            <h3>Safety Tips</h3>
+            <p>Learn practical safety strategies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Location Access</h3>
+            <p>Use browser location features.</p>
+        </div>
+    </section>
+
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safety Tips</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <h2>SafeHer</h2>
+</nav>
+
+<section style="padding:40px;">
+    <h2>Safety Tips</h2>
+
+    <button onclick="filterTips('all')">All</button>
+    <button onclick="filterTips('travel')">Travel</button>
+    <button onclick="filterTips('online')">Online</button>
+
+    <div id="tipsContainer">
+        <div class="card" data-category="travel">
+            Share trip details with trusted contacts.
+        </div>
+
+        <div class="card" data-category="online">
+            Avoid sharing personal info publicly.
+        </div>
+
+        <div class="card" data-category="travel">
+            Keep emergency numbers saved.
+        </div>
+    </div>
+</section>
+
+<script>
+function filterTips(category) {
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        if (category === "all" || card.dataset.category === category) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
